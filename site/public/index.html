@@ -7,6 +7,8 @@
   <title>Nexus - Inicio</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -78,6 +80,27 @@
     <div class="title-carousel">
       <h1 class="">Diferenciais do <span class="nexus-color">Nexus </span></h1>
     </div>
+    <!-- Slider main container -->
+    <div class="swiper" style="overflow: visible;">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./assets/img-nexus/car1.svg" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="./assets/img-nexus/car2.svg" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="./assets/img-nexus/car3.svg" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="./assets/img-nexus/car1.svg" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="./assets/img-nexus/car2.svg" alt="" srcset=""></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
     <div class="uCarousel">
 
     </div>
@@ -96,12 +119,20 @@
       </div>
       <div class="footer-2">
         <div class="upper-footer-2">
-          <a href="#"><h3 class="items-footer-2">| Sobre</h3></a>
-          <a href="#"><h3 class="items-footer-2">| Benefícios</h3></a>
+          <a href="#">
+            <h3 class="items-footer-2">| Sobre</h3>
+          </a>
+          <a href="#">
+            <h3 class="items-footer-2">| Benefícios</h3>
+          </a>
         </div>
         <div class="lower-footer-2">
-          <a href="#"><h3 class="items-footer-2">| Propósito</h3></a>
-          <a href="#"><h3 class="items-footer-2">| Diferenciais</h3></a>
+          <a href="#">
+            <h3 class="items-footer-2">| Propósito</h3>
+          </a>
+          <a href="#">
+            <h3 class="items-footer-2">| Diferenciais</h3>
+          </a>
         </div>
       </div>
       <div class="footer-3">
@@ -112,9 +143,15 @@
     <div class="container-footer-2">
       <div class="footer-2-terms">
         <p class="itens-container-footer-2">© NEXUS 2023. All rights reserved.</p>
-        <a href="#"><p class="itens-container-footer-2">Termos de serviço</p></a>
-        <a href="#"><p class="itens-container-footer-2">Política de privacidade</p></a>
-        <a href="#"><p class="itens-container-footer-2">Cookies</p></a>
+        <a href="#">
+          <p class="itens-container-footer-2">Termos de serviço</p>
+        </a>
+        <a href="#">
+          <p class="itens-container-footer-2">Política de privacidade</p>
+        </a>
+        <a href="#">
+          <p class="itens-container-footer-2">Cookies</p>
+        </a>
       </div>
       <div class="footer-2-icons">
         <ul>
@@ -138,5 +175,40 @@
     </div>
   </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 200,
+      modifier: 2,
+      slideShadows: true,
+      scale: 1,
+      loop: !0,
+      slidesPerView: "auto"
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+</script>
 
 </html>
