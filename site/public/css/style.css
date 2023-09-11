@@ -362,6 +362,11 @@ body {
   padding: 0 10px;
 }
 
+nav {
+  display: none;
+}
+
+
 
 /* Responsividade */
 
@@ -433,5 +438,54 @@ body {
   gap: 0
   ;
 }
+nav.menu-lateral {
+  width: 59px;
+  height: 100%;
+  background-color: #0c0b0f2c;
+  padding: 40px 0 40px 1%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: .2s;
+}
+.btn-expandir {
+  width: 100%;
+  padding-left: 10px;
 
+}
+.btn-expandir > i {
+  color: white;
+  font-size: 24px;
+}
+nav ul {
+  height: 100%;
+  list-style-type: none;
+  padding: 10px;
+}
+ul li.item-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+
+}
+ul li.item-menu .txt-link {
+  margin-left: 20px;
+}
+ul li.item-menu a .icon > i {
+  font-size: 30px;
+}
+nav.menu-lateral.expandir {
+  width: 200px;
+}
+.list-header #respons {
+  display: none;
+}
+.list-header {
+  justify-content: end;
+}
 }
