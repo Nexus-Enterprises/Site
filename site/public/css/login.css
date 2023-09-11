@@ -92,3 +92,8 @@ body {
     transition: all 0.4s ease-in-out;
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+    .left-side-login {
+        height: 820px;
+    }
+}

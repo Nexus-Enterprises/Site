@@ -105,4 +105,12 @@ footer {
     z-index: -1;
 
 }
+@media screen and (max-width: 768px) {
+    .main {
+        padding-left: 20%;
+        padding-top: 15%;
+        overflow: hidden;
+        
+    }
+}
     

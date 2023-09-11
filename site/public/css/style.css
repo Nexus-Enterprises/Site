@@ -367,8 +367,8 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
+    background-color: #150824;
     width: 767px;
-    background-image: none;
 
   }
   header {
